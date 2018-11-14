@@ -1,0 +1,97 @@
+body {
+    background-color: aliceblue;
+    font-family: "Verdana";
+    color: #505050;
+}
+
+nav {
+    font-weight: bold;
+    background-color: white;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav a {
+    color: dimgray;
+    background-color: white;
+    line-height: 4;
+    display: inline-block;
+    list-style-type: none;
+    padding: 3px 40px;
+    text-decoration: none;
+}
+
+nav a:active {
+    background-color: deepskyblue;
+}
+
+p {
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: deepskyblue;
+}
+
+img.me{
+    float: left;
+    padding: 20px 60px;
+    background-color: aliceblue;
+}
+
+/*remove print notice*/
+p.printnotice{
+    display: none;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    font-size: 10px;
+    color: dimgray;
+    flex: 0 1 24%;
+}
+
+iframe.video {
+    border: 1px;
+} 
+
+img.resume {
+    display: inline; 
+    padding-right: 15px;
+}
+
+section {
+    background-color: white;
+    width: 920px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+}
+
+table thead {
+    color: deepskyblue;
+}
+
+table tr {
+    border: 1px solid dimgray;
+}
+
+table tr th {
+    padding: 10px;
+}
+
+table tr td{
+    padding: 10px;
+}
