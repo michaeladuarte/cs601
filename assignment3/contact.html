@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/printstyle.css" media="print">
+        <script type="text/javascript" src="scripts/test.js"></script>
+    </head>
+    <body>
+        <!--menu/navigation bar-->
+        <nav>
+            <a href="index.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <br>
+        <div class="side">
+            <p>
+                I grew up in Michigan about an hour outside of Detroit and moved to Boston a little over two years ago. Being in Boston these past years has been an amazing experience.
+            </p>
+            <p>I really enjoy meeting new people and learning from others in the field. Please feel free to reach out and lets connect on social!
+            </p>
+            <img src = "images/Michael.png" alt = "Michael Duarte"/>
+        </div>
+        <div class="form">
+            <form method="post" action="http://bucs601.com/submit.php" name="contact" id="contact">
+                <div class="formHeader">Contact
+                </div>
+                First Name:
+                <br>
+                <input type="text" id="firstName" name="firstName" aria-describedby="name-format" placeholder="enter your first name here.."> <span class="error"><p id="firstName_error"></p></span>
+                Last Name:
+                <br>
+                <input type="text" id="lastName" name="lastName" placeholder="enter your last name here.."> <span class="error"><p id="lastName_error"></p></span>
+                Facilitator:
+                <br>
+                <input type="text" id="facilitator" name="facilitator" placeholder="enter your facilitator’s first name here.."> <span class="error"><p id="facilitator_error"></p></span>
+                <p>Graduation Year:</p>
+                <input type="radio" name="graduation" value="2019">&nbsp;2019
+                <br>
+                <input type="radio" name="graduation" value="2020">&nbsp;2020
+                <br>
+                <input type="radio" name="graduation" value="other">&nbsp;Other&nbsp;&nbsp;<input type="text" name="other">
+                <br>
+                <p>Location:</p>
+                <input type="checkbox" name="location" value="US">&nbsp;United States of America
+                <br>
+                <input type="checkbox" name="location" value="US">&nbsp;International (Outside of USA)
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class ="social">
+            <a href="mailto:duarte.michael15@gmail.com"><img class = "social" src="images/email.png" alt="Email"></a>
+            <!--link to linkedin profile-->
+            <a href="https://www.linkedin.com/in/michaelduarte15"><img class = "social" src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com/Michael96793660"><img class = "social" src="images/twitter.png" alt="Twitter"></a>
+        </div>
+        <p class = "printnotice">Printed from: www.duartema.com</p>
+    </body>
+    <script>
+        document.getElementById("contact").onsubmit = function () {
+            var x = document.forms["contact"]["firstName"].value;
+            var y = document.forms["contact"]["lastName"].value;
+            var z = document.forms["contact"]["facilitator"].value;
+
+            var submit = true;
+
+            if (x == null || x == "" || x.length <= 2 || !x.match(/^[a-zA-Z]+$/)) {
+                firstNameError = "Please enter a value for first name that contains at least 2 characters and only letters.";
+                document.getElementById("firstName_error").innerHTML = firstNameError;
+                submit = false;
+            }
+
+            if (y == null || y == "" || y.length <=2 || !y.match(/^[a-zA-Z]+$/)) {
+                lastNameError = "Please enter a value for last name that contains at least 2 characters and only letters.";
+                document.getElementById("lastName_error").innerHTML = lastNameError;
+                submit = false;
+            }
+
+            if (z == null || z == "" || !["Christian", "Josh", "Fazil"].includes(z)) {
+                facilitatorError = "Please enter an active facilitator.";
+                document.getElementById("facilitator_error").innerHTML = facilitatorError;
+                submit = false;
+            }
+
+            return submit;
+        }
+
+        function removeWarning() {
+            document.getElementById(this.id + "_error").innerHTML = "";
+        }
+
+        document.getElementById("firstName").onkeyup = removeWarning;
+        document.getElementById("lastName").onkeyup = removeWarning;
+        document.getElementById("facilitator").onkeyup = removeWarning;
+    </script>
+</html>

@@ -1,0 +1,20 @@
+{
+    "degrees": [
+        {
+            "degree": {
+                "school": "University of Detroit Mercy",
+                "major": "Computer Information Systems",
+                "type": "BS",
+                "year": "2015"        
+            }
+        },
+        {
+            "degree": {
+                "school": "Boston University",
+                "major": "Computer Information Systems",
+                "type": "MS",
+                "year": "2019" 
+            }
+        }
+    ]
+}

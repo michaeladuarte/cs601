@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume</title>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/printstyle.css" media="print">
+        <script type="text/javascript" src="scripts/degreeLoad.js"></script>
+    </head>
+    <body>
+        <!--menu/navigation bar-->
+        <nav>
+            <a href="index.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Resume</h1>
+        <div class = "cards">
+            <div class = "card">
+                <h2><img class = "resume" src = "images/acquia.png" alt = "Acquia">Acquia</h2>
+                <h3>Associate Solutions Architect</h3>
+                <p>
+                    Acquia is the leading provider of data-driven solutions to create meaningful customer digital experiences at scale. This includes providing the number one cloud platform for building, delivering, and optimizing Drupal applications. 
+                </p>
+                <p>
+                    In this role I am part of the pre-sales engineering team. I am responsible for providing technical leadership during the sales process and mapping technical requirements to Acquia solutions
+                </p>
+                <br>
+                <br>
+                <!--video element-->
+                <iframe class = "video" width="350" height="200" src="https://www.youtube.com/embed/Wiif-XiA7S4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class = "card">
+                <h2><img class = "resume" src = "images/bedrock.png" alt = "Bedrock">Bedrock Data</h2>
+                <h3>Sales Engineer</h3>
+                <p>
+                    In this role I provided technical leadership pre-sale and during post-sale implementation. 
+                </p>
+                <!--list-->
+                <ul>
+                    <li>Diagnosed API related issues using web service tools such as Postman</li>
+                    <li>Analyzed JSON data locating issues contributing to integration problems</li>
+                    <li>Edited JSON schemas in MongoDB to power custom integrations</li>
+                </ul>
+                <br>
+                <!--video element-->
+                <iframe class = "video" width="350" height="200" src="https://www.youtube.com/embed/lwQtapxGbtE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br>
+            <div class = "card">
+                <h2><img class = "resume" src = "images/dynatrace.png" alt = "Dynatrace">Dynatrace</h2>
+                <h3>Technical Solutions Engineer</h3>
+                <p>
+                    After completing Dynatrace's Profession Development Program in November I joined the team working with Dynatrace's Synthetic Monitoring software. 
+                </p>
+                <!--list-->
+                <ul>
+                    <li>Worked with clients implementing their digital experience business and product needs</li>
+                    <li>Mined relational databases using advanced SQL to identify performance bottlenecks</li>
+                    <li>Used JavaScript designing scripts that improved the performance of web transactions</li>
+                </ul>
+                <!--video element-->
+                <iframe class = "video" width="350" height="200" src="https://www.youtube.com/embed/nqg_QKuYSpY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <br>
+        <section>
+            <h2>Education</h2>
+
+            <button id ="btn" onclick="displayTable()">Obtain Degree Information</button>
+            <br>
+            <br>
+            <div id = "myTable" style="display:none">
+                <table class = "src">
+                    <thead>
+                        <tr>
+                            <th>School</th>
+                            <th>Major</th>
+                            <th>Type</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td><div id = "School"></div></td>
+                        <td><div id = "Major"></div></td>
+                        <td><div id = "Type"></div></td>
+                        <td><div id = "Year"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div id = "School1"></div></td>
+                        <td><div id = "Major1"></div></td>
+                        <td><div id = "Type1"></div></td>
+                        <td><div id = "Year1"></div></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+        </section>
+        <br>
+        <br>
+        <br>
+        <p class = "printnotice">Printed from: www.duartema.com</p>
+    </body>
+</html>

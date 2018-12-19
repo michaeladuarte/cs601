@@ -1,0 +1,92 @@
+/*remove background color, */ 
+body {
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+}
+
+/*removes navigation from print*/
+nav {
+    display: none;
+}
+
+/*removes navigation from print*/
+nav a {
+    display: none;
+}
+
+/*makes background white for print*/
+p {
+    background-color: #FFFFFF;
+}
+
+/*make text color black for print*/
+h1 {
+    text-align: center;
+    color: black;
+}
+
+/*removes image from print*/
+img.me{
+    display: none;
+}
+
+/*displays print notice for print*/
+p.printnotice{
+    display: block;
+    color: black;
+    font-weight: bold;
+}
+
+/*removes color from cards*/
+.card {
+    background-color: #FFFFFF;
+    font-size: 10px;
+    color: black;
+}
+
+/*removes videos from print*/
+iframe.video {
+    display: none;
+} 
+
+/*removes image from print*/
+img.resume {
+    display: none;
+}
+
+section {
+    background-color: white;
+    width: 920px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+}
+
+/*make text color black for print*/
+table thead {
+    color: black;
+}
+
+/*make border color black for print*/
+table tr {
+    border: 1px solid black;
+}
+
+table tr th {
+    padding: 10px;
+}
+
+table tr td{
+    padding: 10px;
+}
+
+/*removes image from print*/
+img.social {
+    display: none;
+}

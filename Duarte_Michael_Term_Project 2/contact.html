@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact | Michael Duarte</title>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/printstyle.css" media="print">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!--navigation bar-->
+        <div class="navigation">
+            <a href="index.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <div class="navdown">
+                <button class="navbtn">More 
+                    <i class="nav-down"></i>
+                </button>
+                <div class="navcontent">
+                    <a href="gallery.html">Gallery</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="education.html">Courses</a>
+                </div>
+            </div> 
+        </div>
+        <h1>Contact</h1>
+        <br>
+        <div class="side">
+            <p>
+                I grew up in Michigan about an hour outside of Detroit and moved to Boston a little over two years ago. Being in Boston these past years has been an amazing experience.
+            </p>
+            <p>I really enjoy meeting new people and learning from others in the field. <strong>Please feel free to reach out or connect on social!</strong>
+            </p>
+            <img src = "images/Michael.png" alt = "Michael Duarte"/>
+        </div>
+        <!--Form powered by formspree-->
+        <div class="form">
+            <form method="post" action="https://formspree.io/duarte.michael15@gmail.com" name="contact" id="contact">
+                <div class="formHeader">Contact
+                </div>
+                First Name:
+                <br>
+                <input type="text" id="firstName" name="firstName" placeholder="enter your first name here.."> <span id="firstName_error"></span>
+                <br>
+                Last Name:
+                <br>
+                <input type="text" id="lastName" name="lastName" placeholder="enter your last name here.."> <span id="lastName_error"></span>
+                <br>
+                Message:
+                <br>
+                <textarea rows="3" cols="100" id="message" name="message" placeholder="enter your message here.."></textarea>
+                <span id="message_error"></span>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <br>
+        <br>
+        <div class="footer">
+            <div class ="social">
+                <a href="mailto:duarte.michael15@gmail.com"><img class = "social" src="images/email.png" alt="Email"></a>
+                <!--link to linkedin profile-->
+                <a href="https://www.linkedin.com/in/michaelduarte15"><img class = "social" src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://twitter.com/Michael96793660"><img class = "social" src="images/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <p class = "printnotice">Printed from: www.duartema.com</p>
+        <script type="text/javascript" src="scripts/formValidation.js"></script>
+    </body>
+</html>

@@ -1,0 +1,275 @@
+body {
+    background-color: aliceblue;
+    font-family: "Verdana";
+    color: #505050;
+}
+
+.navigation {
+    font-weight: bold;
+    background-color: white;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navigation a {
+    float: left;
+    color: dimgray;
+    background-color: white;
+    line-height: 4;
+    display: inline-block;
+    list-style-type: none;
+    padding: 3px 40px;
+    text-decoration: none;
+}
+
+.navdown {
+    float: right;
+    overflow: hidden;
+}
+
+.navdown .navbtn {
+    font-family: "Verdana";
+    font-weight: bold;
+    line-height: 4;
+    font-size: inherit;    
+    border: none;
+    outline: none;
+    color: dimgray;
+    padding: 3px 40px;
+    background-color: inherit;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navigation a:hover, .navdown:hover .navbtn {
+    background-color: deepskyblue;
+}
+
+.navcontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navcontent a {
+    float: none;
+    color: dimgray;
+    padding: 1px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.navcontent a:hover {
+    background-color: #ddd;
+}
+
+.navdown:hover .navcontent {
+    display: block;
+}
+
+p {
+    background-color: white;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+    overflow: hidden;
+}
+
+footer a {
+    color: dimgray;
+    background-color: white;
+    line-height: 4;
+    display: inline-block;
+    list-style-type: none;
+    padding: 3px 40px;
+    text-decoration: none;
+}
+
+.social {
+    clear: both; 
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: deepskyblue;
+}
+
+img.me {
+    float: left;
+    padding: 20px 60px;
+    background-color: aliceblue;
+}
+
+/*remove print notice*/
+p.printnotice {
+    display: none;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    font-size: 10px;
+    color: dimgray;
+    flex: 0 1 24%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+iframe.video {
+    border: 1px;
+} 
+
+img.resume {
+    display: inline; 
+    padding-right: 15px;
+}
+
+section {
+    border: 1px;
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+}
+
+#btn {
+    font-family: "Verdana";
+    font-size: 20px;
+    width: 100%;
+    background-color: deepskyblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;    
+}
+
+#game {
+    font-family: "Verdana";
+    font-size: 20px;
+    float: right;
+    background-color: deepskyblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+}
+
+table thead {
+    color: deepskyblue;
+}
+
+table tr {
+    border: 1px solid dimgray;
+}
+
+table tr th {
+    padding: 10px;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+.formHeader {
+    font-family: "Verdana";
+    font-size: 20px;
+    width: 100%;
+    background-color: deepskyblue;
+    color: white;
+    padding: 14px 0px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: white;
+    float: left;
+    margin: 0 1%;
+    width: 60%;
+}
+
+.side {
+    border-radius: 5px;
+    float: right;
+    margin: 0 1%;
+    width: 30%;
+}
+
+span {
+    color: red;
+    font-size: 12px;
+}
+
+input[type=text]{
+    font-family: "Verdana";
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid deepskyblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    font-family: "Verdana";
+    font-size: 20px;
+    width: 100%;
+    background-color: deepskyblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[name=other] {
+    display: inline-block;
+    border-radius: 4px;
+    width: 90px;
+    height: 10px;
+}
+
+textarea {
+    font-family: "Verdana";
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid deepskyblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
